@@ -13,7 +13,7 @@ const MySocials = () => {
                     LinkedIn <FaLinkedin size={30} />
                 </>
             ),
-            href: 'https://https://www.linkedin.com/in/mthobisi-motimele-4499032a1/',
+            href: 'https://www.linkedin.com/in/mthobisi-motimele-4499032a1/',
             style: 'rounded-tl-md lg:rounded-tr-md',
         },
         {
@@ -32,7 +32,7 @@ const MySocials = () => {
                     E-Mail <HiOutlineMail size={30} />
                 </>
             ),
-            href: 'motimelemthobisi@gmail.com',
+            href: 'mailto:motimelemthobisi@gmail.com',
         },
         {
             id: 4,
@@ -41,7 +41,7 @@ const MySocials = () => {
                     Resume <BsFillPersonLinesFill size={30} />
                 </>
             ),
-            href: '/Mthobisi.docx',
+            href: '/MTHOBISI.pdf',
             style: 'rounded-bl-md lg:rounded-br-md',
             download: true,
         },

@@ -47,9 +47,9 @@ const ContactMeHere = () => {
               required
             ></textarea>
 
-            {/* Buttons placed side by side */}
+          
             <div className="flex justify-between space-x-4">
-              {/* Send Message button now submits the form */}
+            
               <button
                 type="submit"
                 className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300 w-38 md:w-auto"
