@@ -3,6 +3,7 @@ import App from "../assets/Images/Whatsapp.png";
 
 const ContactMeHere = () => {
   const phoneNumber = "0849821089";  
+  const email = "motimelemthobisi@gmail.com"; // Replace with your email
 
   return (
     <div
@@ -20,7 +21,7 @@ const ContactMeHere = () => {
         </div>
         <div className="flex justify-center items-center">
           <form
-            action="https://getform.io/f/broyyxoa"
+            action="https://getform.io/f/broyyxoa"// Replace with your Formspree endpoint
             method="POST"
             className="flex flex-col w-full sm:w-3/4 md:w-1/2"
           >
@@ -48,7 +49,11 @@ const ContactMeHere = () => {
 
             {/* Buttons placed side by side */}
             <div className="flex justify-between space-x-4">
-              <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300 w-full md:w-auto">
+              {/* Send Message button now submits the form */}
+              <button
+                type="submit"
+                className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 flex items-center rounded-md hover:scale-110 duration-300 w-full md:w-auto"
+              >
                 Send Message
               </button>
               
@@ -62,9 +67,9 @@ const ContactMeHere = () => {
                 <img
                   src={App}
                   alt="WhatsApp"
-                  className=" mx-auto w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
+                  className="mx-auto w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20"
                 />
-                  </a>
+              </a>
             </div>
           </form>
         </div>
