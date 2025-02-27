@@ -23,7 +23,7 @@ const Knowledge = () => {
   ];
 
   return (
-    <div name="Knowledge" className="bg-gradient-to-b from-black to-gray-800 w-full h-full py-8">
+    <div name="Skills" className="bg-gradient-to-b from-black to-gray-800 w-full h-full py-8">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Skills</p>
         <p className="py-6 text-lg">These are my Programming Languages</p>

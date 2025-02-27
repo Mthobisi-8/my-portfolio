@@ -102,14 +102,18 @@ const Projects = () => {
         </div>
 
         {selectedProjectData && (
+            
           <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
               <button onClick={handleCloseClick} className="absolute top-4 right-4 text-white text-xl bg-red-500 px-4 py-2 rounded-full">
                     X
                   </button>
             <div className="relative text-center">
-          
+            <button onClick={handleCloseClick} className="absolute  right-4 text-white text-xl bg-red-500 px-4 py-2 rounded-full top-0">
+                    X
+                  </button>
               {!showSlideshow ? (
-                <div>
+                <div className='mt-10'>
+                
                   <p className="bg-gradient-to-b from-black via-slate-950 to-black text-white p-4 rounded-lg">
                     {selectedProjectData.message}
                   </p>

@@ -2,7 +2,7 @@ import Home from "./Components/Home"
 import NavBar from "./Components/NavBar"
 import AboutMe from "./Components/AboutMe"
 import ContactMeHere from "./Components/ContactMe"
-import Knowledge from "./Components/Knowledge"
+import Skills from "./Components/Knowledge"
 import Project from "./Components/Projects"
 import MySocials from "./Components/Socail"
 function App() {
@@ -14,7 +14,7 @@ function App() {
   <MySocials/>
   < Home />
   <AboutMe/>
-  <Knowledge/>
+  <Skills/>
   <Project/>
   <ContactMeHere/>
 </div>

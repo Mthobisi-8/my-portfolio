@@ -21,11 +21,12 @@ const Home = () => {
            I take pride in delivering high-quality, efficient code that exceeds client expectations, ensuring optimal performance and user satisfaction at every stage of development.  </p>
           <div className="flex justify-center md:justify-start">
             <Link
-              to="projectExperience"
+              to="Projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
+             
               Projects
               <span className="group-hover:rotate-90 duration-300">
                 <FaArrowRight size={25} className="ml-1" />

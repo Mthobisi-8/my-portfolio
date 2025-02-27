@@ -9,14 +9,14 @@ const NavBar = () => {
   const links = [
     { id: 1, link: 'home' },
     { id: 2, link: 'AboutMe' },
-    { id: 3, link: 'Knowledge' },
+    { id: 3, link: 'Skills' },
     { id: 4, link: 'Projects' },
     { id: 5, link: 'ContactMe' },
   ];
 
   return (
    
-    <div className="flex justify-between items-center w-full h-15 px-4 text-white bg-black fixed  z-20 backdrop-blur-md">
+    <div className="flex justify-between items-center w-full h-15 px-4 text-white bg-black fixed  z-20 backdrop-blur-lg">
        
       <div>
         <img
