@@ -1,6 +1,6 @@
 import React from 'react';
 import html from '../assets/Images/html.png';
-import Java from '../assets/Images/Javaa.png';
+import Java from '../assets/Images/javaa.png';
 import SQL from '../assets/Images/SQL.jpeg';
 import Ora from '../assets/Images/Oracle.png';
 import CSharp from '../assets/Images/Cshhh.jpg';
