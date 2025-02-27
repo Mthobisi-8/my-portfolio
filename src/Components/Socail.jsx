@@ -1,7 +1,8 @@
 import React from 'react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin ,FaWhatsapp} from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
+import App from "../assets/Images/Whatsapp.png";
 
 const MySocials = () => {
     const links = [
@@ -44,7 +45,20 @@ const MySocials = () => {
             style: 'rounded-bl-md lg:rounded-br-md',
             download: true,
         },
+        {
+            id: 5, // New WhatsApp link
+            child: (
+                <>
+                    WhatsApp <FaWhatsapp size={30} />
+                </>
+            ),
+            href: 'https://wa.me/0849821089', 
+        },
+       
+
     ];
+     //Creating whatsapp link
+     const phoneNumber = "0849821089";
 
     return (
         <div>
@@ -75,6 +89,24 @@ const MySocials = () => {
             </div>
 
             {/* For mobile screens */}
+            <div className="flex lg:hidden fixed bottom-0 left-0 w-full bg-gray-800 text-white">
+                <ul className="flex justify-around w-full">
+                    {links.map(({ id, child, href, download }) => (
+                        <li key={id} className="w-full h-14 flex items-center justify-center">
+                            <a
+                                href={href}
+                                className="flex flex-col items-center justify-center text-sm"
+                                download={download}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                {child}
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+
             <div className="flex lg:hidden fixed bottom-0 left-0 w-full bg-gray-800 text-white">
                 <ul className="flex justify-around w-full">
                     {links.map(({ id, child, href, download }) => (
