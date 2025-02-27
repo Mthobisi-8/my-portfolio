@@ -52,7 +52,7 @@ const MySocials = () => {
                     WhatsApp <FaWhatsapp size={30} />
                 </>
             ),
-            href: 'https://wa.me/0849821089', 
+            href: 'https://wa.me/27849821089', 
         },
        
 
