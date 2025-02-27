@@ -5,6 +5,17 @@ import num3 from '../assets/Images/ThinkFriday/num3.png';
 import num4 from '../assets/Images/ThinkFriday/num4.png';
 import num5 from '../assets/Images/ThinkFriday/num5.png';
 import num6 from '../assets/Images/ThinkFriday/num6.png';
+import nuro1 from '../assets/Images/Rose-Cafeteria/nuro1.png';
+import nuro2 from '../assets/Images/Rose-Cafeteria/nuro2.png';
+import nuro3 from '../assets/Images/Rose-Cafeteria/nuro3.png';
+import nuro4 from '../assets/Images/Rose-Cafeteria/nuro4.png';
+import nuro5 from '../assets/Images/Rose-Cafeteria/nuro5.png';
+import nuro6 from '../assets/Images/Rose-Cafeteria/nuro6.png';
+import nuro7 from '../assets/Images/Rose-Cafeteria/nuro7.png';
+import nuro8 from '../assets/Images/Rose-Cafeteria/nuro8.png';
+import nuro9 from '../assets/Images/Rose-Cafeteria/nuro9.png';
+import nuro10 from '../assets/Images/Rose-Cafeteria/nuro10.png';
+
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
@@ -18,8 +29,14 @@ const Projects = () => {
       id: 1,
       images: [num1, num2, num3, num4, num5, num6],
       title: 'ThinkFriday',
-      message: 'ThinkFriday is a project that was made at ForgeAcademy for Mr Tariq Shurmah company and below is the prototype we had created along side my collegue Nthabiseng Moyaba ,below you can view the project or get the actual code on my Github:',
+      message: 'ThinkFriday is a project that was made at ForgeAcademy for Mr Tariq Shurmah company and below is the prototype we had created along side my collegue Nthabiseng Moyaba ,below you can view the project or get the actual code on my Github:https://github.com/Mthobisi-8',
     },
+    {
+        id: 2,
+        images: [nuro1, nuro2,nuro3,nuro4,nuro5,nuro6,nuro7,nuro8,nuro9,nuro10],
+        title: 'Rose Cafeteria',
+        message: 'Rose cafeteria is a final project for work intergrated learning where we were creating a website for Rosebank College for their cafeteria so learners could learn and order from their smart phones and find their food freshly prepared rather than waiting in long lines to have your delicious food ,below you can view the project or get the actual code on my Github:https://github.com/Mthobisi-8',
+      },
     
   ];
 
@@ -81,13 +98,13 @@ const Projects = () => {
           {myprojects.map(({ id, title, images }) => (
             <div
               key={id}
-              className={`shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${selectedProject === id ? 'scale-110' : ''}`}
+              className={` shadow-md hover:scale-105 duration-500 py-4 rounded-lg ${selectedProject === id ? 'scale-110' : ''}`}
             >
 
               <img
                 src={images[0]} // Display the first image as thumbnail
                 alt={title}
-                className="w-44 mx-auto"
+                className="h-30 w-44 mx-auto "
               />
               <p className="mt-4 text-base">{title}</p>
               {!selectedProject && (
@@ -104,9 +121,7 @@ const Projects = () => {
         {selectedProjectData && (
             
           <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center">
-              <button onClick={handleCloseClick} className="absolute top-4 right-4 text-white text-xl bg-red-500 px-4 py-2 rounded-full">
-                    X
-                  </button>
+             
             <div className="relative text-center">
             <button onClick={handleCloseClick} className="absolute  right-4 text-white text-xl bg-red-500 px-4 py-2 rounded-full top-0">
                     X
@@ -121,7 +136,7 @@ const Projects = () => {
                     View project
                   </button>
                 <div>
-                  <GitHubButton /> 
+                 
                   </div>
                   
                 </div>
@@ -129,9 +144,7 @@ const Projects = () => {
               ) : (
                 <div>
                   <img src={selectedProjectData.images[currentImageIndex]} alt="Enlarged" className="w-3/4 h-auto mx-auto" />
-                  <button onClick={handleCloseClick} className="absolute top-4 right-4 text-white text-xl bg-red-500 px-4 py-2 rounded-full">
-                    X
-                  </button>
+                  
 
                   <button onClick={handlePrevClick} className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-500 text-white px-2 py-2 rounded-full">
                     <IoIosArrowBack />
