@@ -48,7 +48,7 @@ const NavBar = () => {
            <img
                     src={HeroImage}
                     alt="my profile"
-                    className=" w-30 h-10 sm:w-40 sm:h-40 md:w-30  ml-0 "
+                    className=" w-30 h-10 sm:w-50 sm:h-60 md:w-30  ml-0 "
                   />
           {links.map(({ id, link }) => (
             <li
