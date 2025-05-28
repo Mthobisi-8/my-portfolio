@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from "react-scroll";
-import HeroImage from "../assets/Images/Me.png";
+import HeroImage from "../assets/Images/MeBackground.png";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -16,13 +16,13 @@ const NavBar = () => {
 
   return (
    
-    <div className="flex justify-between items-center w-full h-15 px-4 text-white bg-black fixed  z-20 backdrop-blur-lg">
+    <div className="flex justify-between items-center w-full h-15 px-4 text-white bg-black fixed  z-20 backdrop-blur-lg shadow-md shadow-purple-700">
        
       <div>
         <img
                     src={HeroImage}
                     alt="my profile"
-                    className=" lg:w-25 lg:h-13 hidden md:flex md:w-30  ml-0 "
+                    className=" lg:w-25  hidden md:flex md:w-30  ml-0 "
                   />
       </div>
 
@@ -31,7 +31,7 @@ const NavBar = () => {
           links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 backdrop-blur-sm z-50">
+              className="px-4 cursor-pointer capitalize font-medium text-gray-200 hover:bold hover:text-white hover:scale-105 duration-200 backdrop-blur-sm z-50">
               <Link to={link} smooth duration={500}>{link}</Link>
             </li>
           ))
