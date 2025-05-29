@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 const AboutMe = () => {
   return (
@@ -15,7 +15,7 @@ const AboutMe = () => {
           <p className="text-base sm:text-lg md:text-xl mt-10 sm:mt-20">
         Mthobisi Motimele is a dedicated and hardworking professional with a strong passion for both personal and technical growth. 
         Outside of work, he enjoys activities such as chess, coding, and soccer. Known for his determination, Mthobisi is committed to achieving his goals and ensuring that no task is left unfinished. 
-        He thrives in collaborative environments, actively seeking opportunities to learn from others, whether it's work-related or through personal experiences. 
+        He thrives in collaborative environments, actively seeking opportunities to learn from others, whether its work-related or through personal experiences. 
         Mthobisi is proficient in both front-end and back-end development, with expertise in HTML, Java, Kotlin, and C#. He specializes in creating mobile-responsive and web-based solutions, ensuring optimal performance across platforms.    
         </p>
         <br />

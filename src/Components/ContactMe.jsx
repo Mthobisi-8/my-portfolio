@@ -1,9 +1,5 @@
-import React from 'react';
-import App from "../assets/Images/Whatsapp.png";
 
 const ContactMeHere = () => {
-  const phoneNumber = "0849821089";  
-  const email = "motimelemthobisi@gmail.com"; // Replace with your email
 
   return (
     <div

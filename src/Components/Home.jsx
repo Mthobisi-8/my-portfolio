@@ -1,4 +1,4 @@
-import React from 'react';
+
 import HeroImage from "../assets/Images/Welcome.jpeg";
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-scroll';

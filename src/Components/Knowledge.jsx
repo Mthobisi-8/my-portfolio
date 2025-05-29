@@ -1,4 +1,4 @@
-import React from 'react';
+
 import html from '../assets/Images/html.png';
 import Java from '../assets/Images/javaa.png';
 import SQL from '../assets/Images/SQL.jpeg';

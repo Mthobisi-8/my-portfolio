@@ -1,8 +1,7 @@
-import React from 'react';
 import { FaGithub, FaLinkedin ,FaWhatsapp} from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-import App from "../assets/Images/Whatsapp.png";
+
 
 const MySocials = () => {
     const links = [
@@ -58,8 +57,7 @@ const MySocials = () => {
 
     ];
      //Creating whatsapp link
-     const phoneNumber = "0849821089";
-
+   
     return (
         <div>
             {/* For larger screens */}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import num1 from '../assets/Images/ThinkFriday/num1.png';
 import num2 from '../assets/Images/ThinkFriday/num2.png';
 import num3 from '../assets/Images/ThinkFriday/num3.png';
@@ -99,21 +99,6 @@ const Projects = () => {
   };
 
   // GitHub Button function to redirect to external GitHub link
-  const GitHubButton = () => {
-    const handleRedirect = () => {
-      window.location.href = 'https://github.com/Mthobisi-8';
-    };
-
-    return (
-      <button
-        onClick={handleRedirect}
-        className= " mt-4 px-4 py-2 bg-gray-500 hover:bg-gray-950 hover:font-bold text-white rounded"
-      >
-        GitHub
-      </button>
-    );
-  };
-
   const selectedProjectData = myprojects.find((project) => project.id === selectedProject);
 
   return (
