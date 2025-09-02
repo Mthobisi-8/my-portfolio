@@ -102,7 +102,7 @@ const Projects = () => {
   const selectedProjectData = myprojects.find((project) => project.id === selectedProject);
 
   return (
-    <div name="Projects" className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white">
+    <div name="Projects" className="w-full h-screen bg-gradient-to-b from-gray-500 to-black text-white">
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">Projects</p>
         <p className="py-6 text-lg">These are the projects I have worked on:</p>
